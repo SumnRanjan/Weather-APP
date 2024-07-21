@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url(/Breathtaking_Countryside_Sunset.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;height:100vh ;
+  overflow: hidden;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  /* background : linear-gradient(135deg , #767777 , #5ba54a); */
+  color: #fff;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 8px;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.Wind {
+  font-size: 28px;
+  margin: -6px;
+}
+
+.weather {
+  display: none;
+}

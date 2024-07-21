@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/clear.png" type="image/x-icon">
+    <title>Weather App</title>
+  </head>
+  <body>
+  <div class="">
+    <div class="card rounded-[24px] bg-black bg-opacity-50 max-sm:w-[50vh] max-sm:p-8 max-sm:bg-cover">
+      <div class="search w-full flex items-center justify-between">
+        <input
+          class="border-0 outline-0 bg-[#a9e8de] pl-5 pr-6 rounded-full mr-4 text-xl flex-1 h-[60px] text-black "
+          type="text"
+          placeholder="Enter City Name"
+        />
+        <button
+          class="border-0 outline-0 bg-[#a9e8de] rounded-full w-[60px] h-[60px] cursor-pointer"
+        >
+          <img
+            class="relative left-2"
+            src="/Search_Icon.svg.png"
+            width="40"
+            height="40"
+          />
+        </button>
+      </div>
+
+      <div class="hidden error">
+        <p class="text-center font-bold mt-12 text-4xl error">Invalid City Name</p>
+        <img class="mix-blend-multiply mt-10 ml-10 brightness-105" src="/in.png" alt="" width="300" height="300">
+      </div>
+
+      <div class="weather flex flex-col items-center justify-between">
+        <img class="w-[170px] mt-7 Weather-icon" src="/rain.png" alt="" />
+        <h1 class="temp text-7xl font-[500]">22°</h1>
+        <h2 class="city text-3xl font-[400]">New Delhi</h2>
+        <div class="details flex items-center justify-between pl-0 pr-6 mt-14 gap-12">
+          <div class="col">
+            <img class="" src="//humidity.png" alt="" />
+            <div>
+              <p class="humidity ">15 %</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img class="" src="//wind.png" alt="" />
+            <div>
+              <p class="Wind">50 Km</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
