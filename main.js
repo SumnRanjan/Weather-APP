@@ -34,17 +34,17 @@ async function checkWeather(city) {
         weatherIcon.src = "/mist.png"
     }
 
-    if (data.weather[0].main === "Clouds") {
-        document.querySelector('body').style.backgroundImage = 'url(public/nature.png)';
-    } else if (data.weather[0].main === "Clear") {
-        document.querySelector('body').style.backgroundImage = 'url(public/Anime_Girl.png)';
-    } else if (data.weather[0].main === "Rain") {
-        document.querySelector('body').style.backgroundImage = 'url(public/dreamy.png)';
-    } else if (data.weather[0].main === "Drizzle") {
-        document.querySelector('body').style.backgroundImage = 'url(public/Screenshot (462).png)';
-    } else if (data.weather[0].main === "Mist") {
-        document.querySelector('body').style.backgroundImage = 'url(public/Screenshot (451).png)';
-    }
+    // if (data.weather[0].main === "Clouds") {
+    //     document.querySelector('body').style.backgroundImage = 'url(public/nature.png)';
+    // } else if (data.weather[0].main === "Clear") {
+    //     document.querySelector('body').style.backgroundImage = 'url(public/Anime_Girl.png)';
+    // } else if (data.weather[0].main === "Rain") {
+    //     document.querySelector('body').style.backgroundImage = 'url(public/dreamy.png)';
+    // } else if (data.weather[0].main === "Drizzle") {
+    //     document.querySelector('body').style.backgroundImage = 'url(public/Screenshot (462).png)';
+    // } else if (data.weather[0].main === "Mist") {
+    //     document.querySelector('body').style.backgroundImage = 'url(public/Screenshot (451).png)';
+    // }
     
     document.querySelector(".weather").style.display = "flex";
     document.querySelector(".error").style.display = "none"
